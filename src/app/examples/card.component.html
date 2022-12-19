@@ -1,0 +1,15 @@
+<ActionBar title="SwiftUI Card"></ActionBar>
+
+<GridLayout>
+  <SwiftUI 
+    swiftId="card"
+    [data]="swiftUIData" 
+    (swiftUIEvent)="swiftUIEvent($event)">
+  </SwiftUI>
+
+  <Label
+    text="I'm a NativeScript Label"
+    class="t-20 text-center m-t-20 font-weight-bold v-top"
+    (loaded)="loadedLabel($event)"
+  ></Label>
+</GridLayout>

@@ -1,0 +1,9 @@
+<ActionBar title="NativeScript with SwiftUI Examples"> </ActionBar>
+
+<ListView [items]="examples">
+  <ng-template let-name="item">
+    <StackLayout [nsRouterLink]="['/examples', name]">
+      <Label [text]="name | titlecase" class="t-30"></Label>
+    </StackLayout>
+  </ng-template>
+</ListView>
